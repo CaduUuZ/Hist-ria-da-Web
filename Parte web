@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 30.08</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .header {
+            background-color: #6a0dad; /* Cor roxa */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #4a0080; /* Cor roxa escura para um destaque sutil */
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header .menu {
+            display: flex;
+        }
+
+        .header .menu a {
+            color: white;
+            text-decoration: none;
+            background-color: #6a0dad;
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header .menu a:hover {
+            background-color: #4a0080; 
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        /* Estilo para a caixa do índice */
+        .indice {
+            background-color: #d3d3d3; /* Cor cinza */
+            padding: 10px; /* Reduzido para 10px */
+            border-radius: 8px;
+            margin-bottom: 20px; /* Espaçamento inferior */
+            width: 300px; /* Largura reduzida */
+        }
+
+        .indice h2 {
+            margin-top: 0; /* Remove a margem do topo do h2 */
+        }
+
+        /* Estilo para o botão voltar ao topo */
+        .back-to-top {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #4a0080;
+        }
+    </style>
+</head>
+<body>
+    <!-- Adicionando o id "top" para o botão de voltar -->
+    <div id="top"></div>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <h1>HTML BASICS</h1>
+        <nav class="menu">
+            <a href="#entrar">Entrar</a>
+            <a href="#cadastrar">Cadastrar</a>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <div class="indice">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#1940">1940</a></li>
+                <li><a href="#1950">1950</a></li>
+                <li><a href="#1960">1960</a></li>
+                <li><a href="#1970">1970</a></li>
+                <li><a href="#1980">1980</a></li>
+                <li><a href="#1990">1990</a></li>
+                <li><a href="#2000">2000</a></li>
+                <li><a href="#2010">2010</a></li>
+            </ul>
+        </div>
+
+        <h2 id="1940">1940</h2>
+        <h3>Primeiros computadores digitais, como o ENIAC (1945), eram gigantescos, usavam válvulas a vácuo e eram projetados para cálculos matemáticos complexos.</h3>
+        
+        <h2 id="1950">1950</h2>
+        <h3>A transição para transistores substitui as válvulas, tornando os computadores menores e mais eficientes.</h3>
+        
+        <h2 id="1960">1960</h2>
+        <h3>Surge a terceira geração com circuitos integrados, permitindo maior compactação e aumento da capacidade de processamento.</h3>
+        
+        <h2 id="1970">1970</h2>
+        <h3>Primeiros computadores pessoais (PCs) começam a aparecer, como o Altair 8800 em 1975.</h3>
+        
+        <h2 id="1980">1980</h2>
+        <h3>IBM PC e Apple Macintosh popularizam o uso doméstico e empresarial, junto com a evolução dos sistemas operacionais como o MS-DOS e o Windows.</h3>
+        
+        <h2 id="1990">1990</h2>
+        <h3>A Internet se expande rapidamente, conectando computadores ao redor do mundo e mudando a forma de comunicação e trabalho.</h3>
+        
+        <h2 id="2000">2000</h2>
+        <h3>Avanços em dispositivos móveis e computadores portáteis. Computação em nuvem e redes sociais transformam a interação digital.</h3>
+        
+        <h2 id="2010">2010 em frente</h2>
+        <h3>Explosão de smartphones, inteligência artificial, computação quântica e tecnologias como o 5G.</h3>
+        
+        <!-- Botão para voltar ao topo -->
+        <a href="#top" class="back-to-top">Voltar ao Topo</a>
+    </div>
+</body>
+</html>
