@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(130deg, yellow, blue);
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Altura da viewport completa */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        .container {
+            background-color: #363434;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            color: white;
+        }
+
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="tel"],
+        .container input[type="date"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #9000d8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background-color: #7000a6;
+        }
+
+        .container label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .container .radio-group {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="POST">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sexo" value="Masculino" required> Masculino</label>
+                <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+                <label><input type="radio" name="sexo" value="Outro"> Outro</label>
+            </div>
+
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" placeholder="Estado" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
